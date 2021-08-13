@@ -11,58 +11,20 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./style.css">
         <script src = "./p5.js"></script>
         <script src="./sketch.js" async defer></script>
         <script src="./snake.js"></script>
         <script src= "./food.js"></script>
-        <style>
-            #head{
-                background-color: gray;
-                color: linear-gradient(green, yellow);
-                font: impact;
-                font-size: 86px;
-                align-items: center;
-                font-family: 'Lobster', cursive;
-            }
-            #canvas{
-                border: 1;
-                border-color: white;
-                border-radius: 5;
-            }
-            html, body {
-            height: 100%;
-            background-color: grey;
-            }
 
-            body {
-            margin: 0;
-            display: flex;
-            background-color: grey;
-            /* This centers our sketch horizontally. */
-            justify-content: center;
-
-            /* This centers our sketch vertically. */
-            align-items: center;
-            }
-            #scoreD{
-                /* position: absolute; */
-                /* margin-left: 2px; */
-                font-weight: bold;
-                font-family: 'Lobster', cursive;
-                font-size: x-large;
-                color: white;
-                height: 66px;
-                width: 182px;
-            }
-        </style>
     </head>
     <body id="body">
+        <%-include('nav.ejs')%>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div id="head">Snake</div>
-        <canvas id="canvas"></canvas>
+        <!-- <div id="head">Snake</div> -->
+        <!-- <canvas id="canvas"></canvas> -->
         <div id="main">
         <div id="scoreD">
             Score: 0
@@ -74,7 +36,7 @@
             <script src="./sketch.js"type="text/javascript">
               document.write(score)
             </script>
-          <script src="./sketch.js" async defer></script>
+          <script src="./sketch.js"></script>
           <script src="./snake.js"></script>
           <script src= "./food.js"></script>
         </div>

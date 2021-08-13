@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src = ".snake_copy/p5.js"></script>
+        <script src=".snake_copy/sketch.js" async defer></script>
+        <script src=".snake_copy/snake.js"></script>
+        <script src= ".snake_copy/food.js"></script>
+        <style>
+            #head{
+                background-color: gray;
+                color: linear-gradient(green, yellow);
+                font: impact;
+                font-size: 86px;
+                align-items: center;
+                font-family: 'Lobster', cursive;
+            }
+            #canvas{
+                border: 1;
+                border-color: white;
+                border-radius: 5;
+            }
+            html, body {
+            height: 100%;
+            background-color: grey;
+            }
+
+            body {
+            margin: 0;
+            display: flex;
+            background-color: grey;
+            /* This centers our sketch horizontally. */
+            justify-content: center;
+
+            /* This centers our sketch vertically. */
+            align-items: center;
+            }
+            #scoreD{
+                /* position: absolute; */
+                /* margin-left: 2px; */
+                font-weight: bold;
+                font-family: 'Lobster', cursive;
+                font-size: x-large;
+                color: white;
+                height: 66px;
+                width: 182px;
+            }
+        </style>
+    </head>
+    <body id="body">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="head">Snake</div>
+        <canvas id="canvas"></canvas>
+        <div id="main">
+        <div id="scoreD">
+            Score: 0
+            High Score: 0
+            <!-- <div id="highScored">
+                Highest score: 0
+            </div> -->
+        </div>
+            <script src=".snake_copy/sketch.js"type="text/javascript">
+              document.write(score)
+            </script>
+          <script src=".snake_copy/sketch.js" async defer></script>
+          <script src=".snake_copy/snake.js"></script>
+          <script src= ".snake_copy/food.js"></script>
+        </div>
+        <!-- <div id="scorebaaji">
+            score:
+        </div> -->
+        <script type="text/javascript">
+            function f() {
+                var Score = score;
+
+                var str = "Score: " + Score;
+
+                document.getElementById(
+                    'text').innerHTML = str;
+            }
+        </script>
+    </body>
+</html>
