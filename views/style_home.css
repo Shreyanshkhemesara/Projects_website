@@ -1,0 +1,66 @@
+body{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-size: x-large;
+    color: white;
+    background-color: #222;
+    font-family: 'Noto Serif', serif;
+    max-width: 1200px;
+}
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    /* text-decoration: none; */
+}
+img{
+    width: 400px;
+    height: 400px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+nav li{
+    list-style-type: none;
+    margin-left: 20px;
+}
+nav h1{
+    font: 3em;
+}
+nav p, nav{
+    /* color: #777; */
+    font-weight: 300;
+}
+
+#Logo-side{
+    margin-left: 2em;
+    /* margin-top: 15px; */
+    margin-bottom: 0.5em;
+    /* padding-bottom: 2px;     */
+}
+
+.navigation{
+    text-decoration: none;
+    color: white;
+}
+
+.name{
+    width: 400px;
+    text-align: center;
+    color: white;
+}
+a{
+    text-decoration: none;\
+    color: white;
+}

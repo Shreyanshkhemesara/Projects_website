@@ -3,14 +3,19 @@ const morgan = require('morgan');
 const app = express();
 
 app.listen(3000);
-app.set('view engine', 'html');
+app.set('view engine', 'ejs');
 
-app.use(express.static('basic_html'));
+app.use(express.static('views'));
+// app.use(express.static('views/snake_copy'))
 
 app.get('/', (req, res)=>{
-    res.render('<h1>hello</h1>')
+    res.render('./index')
 })
+
 app.get('/snake', (req, res)=>{
-    res.render('./basic_html/index.html');
-    console.log('rendered the index html');
-})  
+    res.render('./snake_copy/snake')
+})
+// app.get('/snake', (req, res)=>{
+    // res.render('./basic_html/index.html');
+//     console.log('rendered the index html');
+// })
